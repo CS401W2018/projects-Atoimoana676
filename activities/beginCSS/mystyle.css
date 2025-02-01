@@ -1,0 +1,18 @@
+p {
+    color: lightcoral;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: red;
+    font-size: 12pt;
+}
+h2 {
+    font-size: 12pt;
+}
+dl {
+    color: lightblue;
+}
+
+footer p {
+    color: rgb(138, 57, 57);
+}
