@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(172, 221, 237);
+}
+
+.surf{
+    width: 650px;
+    height: 600px;
+}
+
+.strong {
+    font-weight: bold;
+}
