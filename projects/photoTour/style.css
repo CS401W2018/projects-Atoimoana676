@@ -40,3 +40,7 @@ h2{
     color: rgb(249, 243, 243);
     font-family: fantasy;
 }
+
+header{
+    background: url('flag2.png') right no-repeat;
+}
