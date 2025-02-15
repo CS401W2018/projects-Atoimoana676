@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+header{
+    background-color: burlywood;
+    padding: 30px 10px 20px 10px;
+    margin: 25px;
+    width:80%;
+}
+
+header h1{
+    border: 5px dashed #000;
+}
+
+.boxa{
+    background-color: antiquewhite;
+}
+h1{
+    background-color: blanchedalmond;
+}
