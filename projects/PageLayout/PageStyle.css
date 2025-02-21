@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(233, 198, 155);
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;  
+    background-color: antiquewhite;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px;
+}
+
+.navLinks{
+    display: flex; /*Tutor taught me this*/
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(215, 100, 37);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: large;
+    box-shadow: 10px 10px 20px;
+
+}
+
+.navLinks a{
+    background-color: rgb(214, 226, 153);
+    text-decoration: none;
+}
+
+.navLinks a:hover{
+    background-color: rgb(149, 255, 0);
+    text-decoration: underline;
+}
+
+
+
+#wrapper{
+    background-color: rgba(1, 16, 16, 0.205);
+    width: 900px;
+    margin: 0 auto
+}
+
+h1{
+    font-weight: 100;
+    text-shadow: 2px 2px white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 3;
+}
+p{
+    text-align: center;
+    text-transform: initial;
+    padding: 50px;
+}
+.clear{
+    clear: both;
+}
