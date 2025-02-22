@@ -25,6 +25,7 @@ body{
     border-radius: 5px;
     font-size: 24px;
     box-shadow: 10px 10px 20px;
+    background: url(Palatavake.jpg)
 
 }
 
@@ -67,4 +68,3 @@ p{
 h3{
     text-align: center;
 }
-
