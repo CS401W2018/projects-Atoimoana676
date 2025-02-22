@@ -1,8 +1,6 @@
 body{
     background-color: rgb(233, 198, 155);
 }
-
-
 .header{
     display: flex;
     justify-content: center;  
@@ -26,20 +24,18 @@ body{
     font-size: 24px;
     box-shadow: 10px 10px 20px;
     background: url(Palatavake.jpg)
-
 }
 
 .navLinks a{
     background-color: rgba(242, 157, 8, 0.497);
     text-decoration: none;
+    font-style: oblique;
 }
 
 .navLinks a:hover{
     background-color: rgb(191, 88, 28);
     text-decoration: underline;
 }
-
-
 
 #wrapper{
     background-color: rgba(1, 16, 16, 0.205);
@@ -49,7 +45,7 @@ body{
 
 h1{
     font-weight: 100;
-    text-shadow: 2px 2px rgba(233, 154, 52, 0.759);
+    text-shadow: 2px 2px rgb(206, 214, 213);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
