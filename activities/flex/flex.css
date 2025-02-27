@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-around;
+}
+
+nav a{
+    display: block;
+    background-color: rgb(210, 134, 42);
+    color: blue;
+    padding: 5px;
+}
+
+.parents{
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.child{
+    background-color: aqua;
+    margin: 10px;
+    width: 100px;
+}
+
+
