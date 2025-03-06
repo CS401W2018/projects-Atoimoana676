@@ -51,3 +51,36 @@ background-color: rgb(55, 63, 60);
 .card img {
     width: 100%;
 }
+
+@media ONLY screen AND (max-width: 900px ) {
+   .row { 
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    
+    .feature {
+        order: -1;
+    }
+
+}
+
+@media ONLY screen and (max-width: 700px) {
+    nav {
+        flex-direction: column 
+    }
+
+    nav a {
+        border-bottom: #fff;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+
