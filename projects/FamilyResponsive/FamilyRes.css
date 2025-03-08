@@ -36,8 +36,6 @@ aside {
     width: 30%;
 }
 
-
-
 figure img {
     width: 100%;
 }
@@ -60,9 +58,9 @@ figure img {
 }
 
 .card img {
-    width: 100%;  /* Simple change: Ensures image fits the full width of the card */
-    height: 200px;  /* Simple change: Sets a consistent height for the image */
-    object-fit: cover;  /* Simple change: Ensures the image fits within the card without stretching */
+    width: 100%;  /* Ensures image fits the full width of the card */
+    height: 200px;  /* Sets a consistent height for the image */
+    object-fit: cover;  /* Ensures the image fits within the card without stretching */
 }
 
 .card h2 {
@@ -74,7 +72,7 @@ figure img {
     padding: 10px;
     margin: 0;
     text-align: center;
-    flex-grow: 1;  /* Simple change: Ensures the text expands properly and doesn't get cut off */
+    flex-grow: 1;  /* Ensures the text expands properly and doesn't get cut off */
 }
 
 .parent {
@@ -84,17 +82,17 @@ figure img {
 @media ONLY screen AND (max-width: 900px) {
     .row { 
         flex-direction: column;
-        align-items: center;  /* Simple change: Centers the content when the screen size is small */
+        align-items: center;  /* Centers the content when the screen size is small */
     }
 
     .card {
-        width: 90%;  /* Simple change: Makes the card take up more width on smaller screens */
+        width: 90%;  /* Makes the card take up more width on smaller screens */
     }
 }
 
 @media ONLY screen and (max-width: 700px) {
     nav {
-        flex-direction: column;  /* Simple change: Makes the navigation stack vertically on small screens */
+        flex-direction: column;  /* Makes the navigation stack vertically on small screens */
     }
 
     nav a {
@@ -102,6 +100,21 @@ figure img {
     }
 
     .card {
-        margin-bottom: 20px;  /* Simple change: Adds space between cards on small screens */
+        margin-bottom: 20px;  /* Adds space between cards on small screens */
     }
+
+    /* === ADDED CODE === */
+    .parent {
+        flex-direction: column;  /* Ensures the sidebar moves below the main content */
+    }
+
+    aside.sidebar {
+        order: 1;  /* Moves the sidebar below the main content */
+        width: 100%;  /* Makes the sidebar take full width for better layout */
+    }
+
+    main {
+        order: 0;  /* Keeps the main content above the sidebar */
+    }
+    /* === END OF ADDED CODE === */
 }
