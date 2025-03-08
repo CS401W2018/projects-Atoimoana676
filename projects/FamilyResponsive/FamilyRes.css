@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: aqua;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav a {
+    display: flex;
+    padding: 10px;
+    background-color: blue;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: aquamarine;
+    background-color: rgb(55, 63, 60);
+}
+
+aside {
+    width: 30%;
+}
+
+
+
+figure img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.card {
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(40, 40, 40, 0.5);
+    width: 250px; 
+    margin-bottom: 20px;  /* Simple change: Added space between cards */
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;  /* Simple change: Ensures image fits the full width of the card */
+    height: 200px;  /* Simple change: Sets a consistent height for the image */
+    object-fit: cover;  /* Simple change: Ensures the image fits within the card without stretching */
+}
+
+.card h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card p {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;  /* Simple change: Ensures the text expands properly and doesn't get cut off */
+}
+
+.parent {
+    display: flex;
+}
+
+@media ONLY screen AND (max-width: 900px) {
+    .row { 
+        flex-direction: column;
+        align-items: center;  /* Simple change: Centers the content when the screen size is small */
+    }
+
+    .card {
+        width: 90%;  /* Simple change: Makes the card take up more width on smaller screens */
+    }
+}
+
+@media ONLY screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;  /* Simple change: Makes the navigation stack vertically on small screens */
+    }
+
+    nav a {
+        border-bottom: #fff;
+    }
+
+    .card {
+        margin-bottom: 20px;  /* Simple change: Adds space between cards on small screens */
+    }
+}
