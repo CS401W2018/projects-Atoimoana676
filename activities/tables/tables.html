@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
 </head>
 <body>
     <header>
         <h1>Web Design</h1>
     </header>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
     <main>
-        <table border="1">
+        <table class="schedule">
+            <caption>course schedule</caption>
             <thead>
                 <tr>
                     <th>Department</th>
@@ -77,13 +86,10 @@
             </tfoot>
         </table>
         <h2>Question</h2>    
-        <p>1. When do you use a table?</p>
-        <p>when you have data you wanna organize like a class schedule</p>
-        <p>2. When do you not use a table?</p>
-        <p>not use it to layout the page</p>
-        <p>3.When do you need to do extra work for table accessibility?</p>
-        <p>when the label is not in the top row</p>
-
+        <p>1. Why don't we use the border attribute?</p>
+        <p>because it will cause a validation error and theres no way to override it</p>
+        <p>2. What is the easiest way to color every other row a different color?</p>
+        <p>we need to use the nth child to select the specific rows.</p>
     </main>
     <footer>
         <p>&copy;2025 Andrew Toimoana</p>
