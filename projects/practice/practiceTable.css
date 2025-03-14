@@ -1,0 +1,95 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION BAR */
+nav {
+    background-color: #2a2ace;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #2a2ace;
+    border-radius: 5px;
+}
+
+/* LAYOUT: Sidebar + Main Content */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+aside {
+    flex: 1; /* Sidebar takes up 1 part */
+    background: #f4f4f4;
+    padding: 16px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+main {
+    flex: 3; /* Main content takes up 3 parts */
+    padding: 20px;
+}
+
+/* TABLE STYLES */
+.schedule {
+    border: 3px solid #000;
+    box-shadow: 3px 3px 3px rgba(30,30,30,0.5);
+    caption-side: bottom;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.schedule th, .schedule td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.schedule thead {
+    background-color: rgb(42, 42, 206);
+    color: aliceblue;
+}
+
+.schedule tfoot tr {
+    background-color: rgb(21, 21, 238);
+}
+
+.schedule tbody tr:nth-child(even) {
+    background-color: #999;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
