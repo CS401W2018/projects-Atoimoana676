@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    background-color: antiquewhite;
+}
+
+legend { 
+    background-color: aquamarine;
+    color: white;
+    padding: 20px;
+}
+
+.form-row input:not([type=submit]) {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #999;
+}
+
+.form-row input:not([type=submit]):focus {
+    background-color: #FFF;
+}
+
+.form-row input[type="submit"] {
+    padding: 10px;
+    background-color: rgb(12, 12, 144);
+    color: white;
+    font-size: 24px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.radio-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-spacer {
+    width: 150px;
+    text-align: right;
+}
+
+@media ONLY screen and (max-width: 600px) {
+    .form-row, .radio-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+
+    .form-spacer {
+        text-align: left;
+    }
+}
