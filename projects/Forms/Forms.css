@@ -74,6 +74,7 @@ header {
     background-color: rgb(189, 134, 67);
     padding: 10px;
     border-radius: 15px;
+    font-size: large;
 }
 
 main {
@@ -87,4 +88,5 @@ footer {
     border-radius: 15px;
     bottom: 0;
     width: 100%;
+    font-size: 20px;
 }
