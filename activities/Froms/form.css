@@ -1,5 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgba(232, 236, 238, 0.975);
 }
 
 fieldset {
@@ -7,26 +9,28 @@ fieldset {
 }
 
 legend { 
-    background-color: aquamarine;
+    background-color: rgb(150, 199, 183);
     color: white;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .form-row input:not([type=submit]) {
     padding: 5px;
     border-radius: 5px;
-    background-color: #999;
+    background-color: #f1e9e9;
 }
 
 .form-row input:not([type=submit]):focus {
-    background-color: #FFF;
+    background-color: #94a9d4;
 }
 
 .form-row input[type="submit"] {
     padding: 10px;
-    background-color: rgb(12, 12, 144);
+    background-color: rgb(162, 71, 184);
     color: white;
     font-size: 24px;
+    border-radius: 10px;
 }
 
 .form-row {
@@ -63,4 +67,26 @@ legend {
     .form-spacer {
         text-align: left;
     }
+}
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(189, 134, 67);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: large;
+}
+
+main {
+    margin: 15px;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(205, 144, 71);
+    padding: 10px;
+    border-radius: 15px;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
 }
