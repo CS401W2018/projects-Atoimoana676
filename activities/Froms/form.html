@@ -62,15 +62,10 @@
         </form>
 
         <h1>Questions</h1>
-        <p>1. What is JavaScript? How did it get its name?</p>
-        <p>Its a programming language. They named it after Java  programming language to make it popular</p>
-        <p>2. What are the two ways you can run JavaScript?</p>
-        <p>Javascript is running in our browser in the Dom and also in nodejs (express.js, ruby)</p>
-        <p>3.What was the most popular front-end js library?</p>
-        <p>jQuery the first front end js library was the most popular</p>
-        <p>4.What is the most popular front-end js library today?</p>
-        <p> now react.js is the most popular</p>
-
+        <p>1. What is AJAX?</p>
+        <p> its a technique used in web development to load data from a server without refreshing the entire webpage.</p>
+        <p>2. Why do you put your JS Code in a separate file?</p>
+        <p>becuase its faster for the page to load. it also allows you to use it on another page more esily if you link it to that instead of copy and paste and it allows you to have those working on html just work on that and those on JS will only be working on their separate files.</p>
     </main>
     <footer>
         <p>&copy; 2025 Andrew Toimoana</p>
@@ -99,10 +94,14 @@
             const formData = {
                 Fullname: Fullname,
                 email: email,
-                password: pass
+                password: pass,
             }
             
-            console.log(Fullname);
+            console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.jason", true);
+            xhr.setRequestHeader("content-Type", "application/jason;charset=UTF-8");
+            xhr.onready
         });
     </script>
 </body>
