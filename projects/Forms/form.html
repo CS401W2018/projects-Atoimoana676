@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <div id="message"></div>
+        <form action="processing.html" method="get" id="myForm">
+            <fieldset>
+                <legend>Sign up</legend>
+                <div class="form-row">
+                    <label for="Fullname">Full name:</label>
+                    <input type="text" name="Fullname" placeholder="FullName" id="Fullname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required="required" value="toimoanaomar@gmail.com" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="age">age:</label>
+                    <input type="number" name="name" id="age" placeholder="age">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="12345678" pattern="[0-9]{8}" required>
+                </div>
+                <div class="form-row">
+                    <label for="state">state</label>
+                    <select name="state" id="state">
+                        <option value="blank">select</option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Martial Status</div>
+                    <label><input type="radio" name="Status" value="Freshman">Single</label>
+                    <label><input type="radio" name="status" value="Sophmore" checked>Married</label>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked> Remember me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Andrew Toimoana</p>
+    </footer>
+    <script src="form.js"></script>
+</body> 
+</html>
+
