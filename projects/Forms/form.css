@@ -10,7 +10,7 @@ fieldset {
 
 legend { 
     background-color: rgb(150, 199, 183);
-    color: white;
+    color: rgb(209, 205, 205);
     padding: 20px;
     border-radius: 10px;
 }
