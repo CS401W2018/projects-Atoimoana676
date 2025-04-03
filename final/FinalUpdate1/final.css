@@ -52,6 +52,76 @@ nav a:hover {
     border-radius: 5px;
 }
 
+h2 {
+    text-align: center;
+}
+
+.intro{
+    text-align: center ;
+
+}
+
+.aboutus {
+    text-align: center;
+}
+
+.sidebyside {
+    display: flex;
+
+}
+
+.para {
+    margin-top: 90px;
+}
+
+.homeimage {
+    width: 50%;
+}
+
+ /* table */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.product-table caption {
+    caption-side: top; 
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-table th {
+    background-color: #f4f4f4;
+}
+
+.product-table img.product-image {
+    width: 100px;
+    height: auto;
+}
+
+.product-table a.learn-more {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.product-table a.learn-more:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width: 768px) {
     nav ul {
         display: block;
@@ -74,11 +144,13 @@ nav a:hover {
 .products {
     text-align: center;
     padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product {
     background: white;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 1rem auto;
     width: 80%;
     max-width: 300px;
