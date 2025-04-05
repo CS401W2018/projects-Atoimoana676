@@ -213,7 +213,7 @@ footer {
 }
 
 /* portfolio */
-.portfolio-img {
+.ResizeImg {
     width: 150px;
     height: 150px;
     object-fit: cover;
