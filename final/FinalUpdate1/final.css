@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #b62a2a;
+    background-color: #b62a2a; 
     color: white;
     padding: 1rem;
     text-align: center;
@@ -211,6 +211,15 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+
+/* portfolio */
+.portfolio-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 
 /* @media (max-width: 600px) {
     .product {
