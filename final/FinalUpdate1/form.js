@@ -1,57 +1,49 @@
-document.getElementById('myForm').addEventListener('submit',function(event){
+document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    alert("Form Submitted");
 
-    const Fullname = document.getElementById('Fullname').value;
-    const email = document.getElementById('email').value;
-    const pass = document.getElementById('pass').value;
-    const age = document.getElementById('age').value;
-    const comments = document.getElementById('comments').value;
-    
-    if (!Fullname) {
-        alert("you need to enter your name.");
-        return;
-    }
+    const Fullname = document.getElementById('Fullname').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('messageBox').value.trim();
 
-    if (!email) {
-        alert("you need to enter your name.");
+    if (!Fullname || !email || !subject || !message) {
+        alert("Please fill in all fields.");
         return;
-    }
-
-    if (!age || age<18) {
-        alert("you need to be 18");
-        return;
-    
     }
 
     const formData = {
-        Fullname: Fullname,
-        email: email,
-        password: pass,
-        age: age,
-        comments: comments
-    }
-    
+        Fullname,
+        email,
+        subject,
+        message
+    };
+
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "submit.json", true);
-    xhr.setRequestHeader("content-Type", "application/json;charset=UTF-8");
+    xhr.open("GET", "submit.json", true); // Can change to POST if needed
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             const response = JSON.parse(xhr.responseText);
-            const result = 
-            `   ${formData.Fullname} <br>
-                ${formData.email} <br>
-                ${formData.age} <br>
-                ${formData.comments}`
-            document.getElementById('message').innerHTML = response.message;
-            document.getElementById('myForm').innerHTML = "";
-            document.getElementById('result').innerHTML = result;
 
-            
+            // Show success message
+            document.getElementById('message').innerHTML = `<p style="color: green;">Message successfully sent! We'll be in touch soon.</p>`;
+
+            // Hide the form
+            document.getElementById('myForm').style.display = 'none';
+
+            // Show submitted data
+            document.getElementById('result').innerHTML = `
+                <h3>Your Message Details:</h3>
+                <p><strong>Name:</strong> ${formData.Fullname}</p>
+                <p><strong>Email:</strong> ${formData.email}</p>
+                <p><strong>Subject:</strong> ${formData.subject}</p>
+                <p><strong>Message:</strong> ${formData.message}</p>
+            `;
         } else if (xhr.readyState === 4) {
             alert('Error submitting form.');
         }
     };
+
     xhr.send(JSON.stringify(formData));
-    console.log(formData);
 });

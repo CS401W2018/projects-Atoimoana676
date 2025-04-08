@@ -25,60 +25,38 @@
         <div id="message"></div>
         <form action="processing.php" method="post" id="myForm">
             <fieldset>
-                <legend>Sign up</legend>
+                <legend>Contact Us</legend>
+    
                 <div class="form-row">
                     <label for="Fullname">Full name:</label>
-                    <input type="text" name="Fullname" placeholder="FullName" id="Fullname">
+                    <input type="text" name="Fullname" placeholder="Your Name" id="Fullname" required>
                 </div>
+    
                 <div class="form-row">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" required="required" value="toimoanaomar@gmail.com" id="email">
+                    <input type="email" name="email" placeholder="you@example.com" id="email" required>
                 </div>
+    
                 <div class="form-row">
-                    <label for="age">age:</label>
-                    <input type="number" name="name" id="age" placeholder="age">
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" placeholder="e.g., Product Inquiry" required>
                 </div>
+    
                 <div class="form-row">
-                    <label for="pass">Password:</label>
-                    <input type="password" name="password" id="pass">
+                    <label for="messageBox">Message:</label>
+                    <textarea name="message" id="messageBox" rows="5" placeholder="Write your message here..." required></textarea>
                 </div>
-                <div class="form-row">
-                    <label for="phone">Phone number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="12345678" pattern="[0-9]{8}">
-                </div>
-                <div class="form-row">
-                    <label for="state">state</label>
-                    <select name="state" id="state">
-                        <option value="blank">select</option>
-                        <option value="CO">Colorado</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="UT">Utah</option>
-                    </select>
-                </div>
-                <div class="radio-row">
-                    <div class="form-spacer">Martial Status</div>
-                    <label><input type="radio" name="Status" value="Freshman">Single</label>
-                    <label><input type="radio" name="status" value="Sophmore" checked>Married</label>
-                </div>
-                <div class="radio-row">
-                    <div class="form-spacer"></div>
-                    <label><input type="checkbox" name="agree" id="agree" checked> Remember me</label>
-                </div>
-                <div class="form-row">
-                    <label for="comments">comments:</label>
-                    <textarea name="comments" id="comments"></textarea>
-                </div>
+    
                 <div class="form-row">
                     <div class="form-spacer"></div>
-                    <input type="submit">
+                    <input type="submit" value="Send">
                 </div>
             </fieldset>
         </form>
-        <div id="result">
-
-        </div>
-
+    
+        <div id="result"></div>
     </main>
+    
 
     <footer>
         <p>Contact Us: Longoteme Rd, Tongatapu | Phone: +676 123 4567 | Email: info@hthsuppliers.com</p>
