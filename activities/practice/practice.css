@@ -1,0 +1,25 @@
+/* Change the font and font size of the full page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Flex to space out links horizontally */
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Add border and padding to divs */
+  .box {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  /* Grid layout for 3 columns in MAIN */
+  #main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
