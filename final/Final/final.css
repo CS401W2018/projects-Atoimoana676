@@ -111,6 +111,27 @@ h2 {
     text-align: center;
 }
 
+.business-guide {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.business-guide h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.business-guide h3,
+.business-guide p,
+.business-guide ul {
+    margin-bottom: 20px;
+}
+
+.aboutusLink a {
+    text-decoration: none;
+}
+
 /* joinery */
 
 .joinery {
