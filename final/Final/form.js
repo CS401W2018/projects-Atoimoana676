@@ -16,7 +16,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         email,
         subject,
         message
-    };
+    }; 
 
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "submit.json", true); // Can change to POST if needed

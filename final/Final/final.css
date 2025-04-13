@@ -143,7 +143,9 @@ h2 {
     height: 50%;
 }
 
- /* table */
+
+
+ /* table stuff*/
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -185,6 +187,12 @@ body {
 .product-table a.learn-more:hover {
     text-decoration: underline;
 }
+
+.details-column {
+    width: 450px;
+    word-break: break-word;
+}
+
 
 /* Products Section */
 
