@@ -55,6 +55,14 @@ legend {
     text-align: right;
 }
 
+main {
+    margin-top: 50px;
+}
+
+footer {
+    margin-top: 190px;
+}
+
 @media ONLY screen and (max-width: 600px) {
     .form-row, .radio-row {
         flex-direction: column;
@@ -69,24 +77,3 @@ legend {
     }
 }
 
-/* header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(189, 134, 67);
-    padding: 10px;
-    border-radius: 15px;
-    font-size: large;
-}
-
-main {
-    margin: 15px;
-}
-
-footer {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(205, 144, 71);
-    padding: 10px;
-    border-radius: 15px;
-    bottom: 0;
-    width: 100%;
-    font-size: 20px;
-} */
