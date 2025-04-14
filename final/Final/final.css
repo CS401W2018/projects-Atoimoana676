@@ -133,13 +133,22 @@ h2 {
     text-decoration: none;
 }
 
-.move1 {
+/* youtube */
+
+/* .move1 {
     margin-left: 30%;
 }
 
 iframe {
     width: 50%;
-}
+} */
+
+iframe {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid black;
+    border-radius: 5px;
+  }  
 
 /* joinery */
 
