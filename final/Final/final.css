@@ -250,6 +250,9 @@ footer {
     border-radius: 5px;
 }
 
+.width {
+    width: 350px;
+}
 
 /* @media (max-width: 600px) {
     .product {
