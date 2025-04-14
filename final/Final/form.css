@@ -15,18 +15,16 @@ legend {
     border-radius: 10px;
 }
 
-.form-row input:not([type=submit]) {
-    padding: 5px;
+.form-row input:not([type=submit]), .form-row textarea {
+    padding: 10px;  
+    font-size: 16px; 
     border-radius: 5px;
     background-color: #f1e9e9;
-}
-
-.form-row input:not([type=submit]):focus {
-    background-color: #94a9d4;
+    width: 100%; 
 }
 
 .form-row input[type="submit"] {
-    padding: 10px;
+    padding: 15px;  
     background-color: rgb(162, 71, 184);
     color: white;
     font-size: 24px;
@@ -35,6 +33,7 @@ legend {
 
 .form-row {
     display: flex;
+    flex-direction: column; 
     gap: 10px;
     margin: 10px 0;
 }
@@ -46,8 +45,9 @@ legend {
 }
 
 .form-row label {
-    width: 150px;
-    text-align: right;
+    width: 100%; 
+    text-align: left; 
+    font-size: 16px;
 }
 
 .form-spacer {
@@ -58,6 +58,14 @@ legend {
 main {
     margin-top: 50px;
 }
+
+form {
+    width: 100%; /* Ensure it takes available width */
+    max-width: 1100px; /* Limits the form width to 600px */
+    margin: 0 auto; /* Centers the form on the page */
+    padding: 40px; /* Optional: Adds padding around the form */
+}
+
 
 footer {
     margin-top: 190px;
@@ -76,4 +84,3 @@ footer {
         text-align: left;
     }
 }
-
