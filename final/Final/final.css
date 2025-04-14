@@ -81,6 +81,31 @@ h2 {
     margin-top: 15px;
 }
 
+/* how I make the pic responsive in home with caption */
+
+.homeimage {
+    width: 100%;
+    height: 100%; 
+}
+
+.caption {
+    font-size: 10pt;
+    color: #555;
+    padding-bottom: 10px; 
+}
+
+/* Responsive Design for home image */
+@media screen and (max-width: 768px) {
+    .sidebyside {
+        display: block; /* Stack the image and text on smaller screens */
+        text-align: center; /* Center-align content */
+    }
+
+    .image-container {
+        width: 100%; /* Ensure the figure takes full width */
+    }
+}
+
 /* Aboutpage */
 .aboutus1{
     margin-top: 45px;
