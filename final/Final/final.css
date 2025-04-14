@@ -146,9 +146,15 @@ iframe {
 iframe {
     width: 80%;
     aspect-ratio: 16 / 9;
+    margin-left: 10%;
+    margin-top: 10px;
     border: 1px solid black;
     border-radius: 5px;
   }  
+
+  .move2 {
+    text-align: center;
+  }
 
 /* joinery */
 
