@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello AWS!</title>
+    <!-- Include Tailwind CSS for a modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <!-- Main container with a card-like appearance -->
+    <div class="bg-white shadow-xl rounded-2xl p-8 max-w-xl w-full text-center">
+        <!-- Title -->
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-4">
+            Hello from AWS!
+        </h1>
+        
+        <!-- Subtitle and description -->
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            This is a simple, static website hosted on Amazon Web Services.
+            It's a great starting point for your next project.
+        </p>
+
+        <!-- Call-to-action button, styled with Tailwind -->
+        <a href="https://aws.amazon.com/s3/" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+            Learn more about AWS
+        </a>
+    </div>
+
+</body>
+</html>
